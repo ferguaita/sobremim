@@ -1,424 +1,615 @@
-<html>
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="pt-br">
 
-<head data-machine-id="WEB1183">
-  <meta http-equiv="origin-trial" content="A/kargTFyk8MR5ueravczef/wIlTkbVk1qXQesp39nV+xNECPdLBVeYffxrM8TmZT6RArWGQVCJ0LRivD7glcAUAAACQeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZS5jb206NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVUaGlyZFBhcnR5U3RvcmFnZVBhcnRpdGlvbmluZzIiLCJleHBpcnkiOjE3NDIzNDIzOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
-  <style type="text/css">
-    @charset "UTF-8";
-
-    [ng\:cloak],
-    [ng-cloak],
-    [data-ng-cloak],
-    [x-ng-cloak],
-    .ng-cloak,
-    .x-ng-cloak,
-    .ng-hide:not(.ng-hide-animate) {
-      display: none !important;
-    }
-
-    ng\:form {
-      display: block;
-    }
-
-    .ng-animate-shim {
-      visibility: hidden;
-    }
-
-    .ng-anchor {
-      position: absolute;
-    }
-  </style>
-  <style type="text/css">
-    @charset "UTF-8";
-
-    [ng\:cloak],
-    [ng-cloak],
-    [data-ng-cloak],
-    [x-ng-cloak],
-    .ng-cloak,
-    .x-ng-cloak,
-    .ng-hide:not(.ng-hide-animate) {
-      display: none !important;
-    }
-
-    ng\:form {
-      display: block;
-    }
-
-    .ng-animate-shim {
-      visibility: hidden;
-    }
-
-    .ng-anchor {
-      position: absolute;
-    }
-  </style>
-  <!-- MachineID: WEB1183 -->
-  <title>ROBLOX.com</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,requiresActiveX=true">
+<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="author" content="ROBLOX Corporation">
-  <meta name="description" content="Roblox is the world's largest social platform for play. We help power the imaginations of people around the world.">
-  <meta name="keywords" content="free games, online games, building games, virtual worlds, free mmo, gaming cloud, physics engine">
-  <meta name="apple-itunes-app" content="app-id=431946152">
-  <meta name="google-site-verification" content="KjufnQUaDv5nXJogvDMey4G-Kb7ceUVxTdzcMaP9pCY">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Online</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <script async="" src="http://b.scorecardresearch.com/beacon.js"></script>
-  <script type="text/javascript" async="" charset="utf-8" src="https://www.gstatic.com/recaptcha/releases/EGbODne6buzpTnWrrBprcfAY/recaptcha__pt_br.js" crossorigin="anonymous" integrity="sha384-QCwnW7k1TM2WIjFJer5hltr10RK2K/dhC5xuDlF2JdJ+H5j5f6kdDSafSJowNz9F"></script>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-  <meta property="og:site_name" content="ROBLOX">
-  <meta property="og:title" content="ROBLOX">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.roblox.com/">
-  <meta property="og:description" content="Roblox is the world's largest social platform for play. We help power the imaginations of people around the world.">
-  <meta property="og:image" content="https://images.rbxcdn.com/6c27cb9db1779888868bf7d87e6d3709.jpg">
-  <meta property="fb:app_id" content="190191627665278">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@ROBLOX">
-  <meta name="twitter:title" content="ROBLOX">
-  <meta name="twitter:description" content="Roblox is the world's largest social platform for play. We help power the imaginations of people around the world.">
-  <meta name="twitter:creator">
-  <meta name="twitter:image1" content="https://images.rbxcdn.com/6c27cb9db1779888868bf7d87e6d3709.jpg">
-  <meta name="twitter:app:country" content="US">
-  <meta name="twitter:app:name:iphone" content="ROBLOX Mobile">
-  <meta name="twitter:app:id:iphone" content="431946152">
-  <meta name="twitter:app:url:iphone">
-  <meta name="twitter:app:name:ipad" content="ROBLOX Mobile">
-  <meta name="twitter:app:id:ipad" content="431946152">
-  <meta name="twitter:app:url:ipad">
-  <meta name="twitter:app:name:googleplay" content="ROBLOX">
-  <meta name="twitter:app:id:googleplay" content="com.roblox.client">
-  <meta name="twitter:app:url:googleplay">
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
 
-  <link href="https://images.rbxcdn.com/1387da00c070fd34110985aee87f3155.ico.gzip" rel="icon">
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #444;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+    }
 
-  <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet" type="text/css">
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0.5rem;
+      cursor: pointer;
+    }
 
-  <link rel="canonical" href="https://www.roblox.com/">
+    .banner {
+      background: url('https://via.placeholder.com/1200x300') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
 
-  <link rel="stylesheet" href="https://static.rbxcdn.com/css/leanbase___1dcd1e0de30c586ac1ff4e343528e881_m.css/fetch">
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
 
-  <link rel="stylesheet" href="https://static.rbxcdn.com/css/page___50390c99afb901ac053a2ef6337eca82_m.css/fetch">
+    .product {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s;
+    }
 
-  <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
-  <meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
-  <meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
-  <meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
-  <meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9">
-  <script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202408290101/pubads_impl.js" async=""></script>
-  <script type="text/javascript">
-    window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-1.11.1.js'><\/script>")
-  </script>
-  <script type="text/javascript" src="/js/jquery/jquery-1.11.1.js"></script>
-  <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.migrate/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript">
-    window.jQuery || document.write("<script type='text/javascript' src='/js/jquery/jquery-migrate-1.2.1.js'><\/script>")
-  </script>
-  <script type="text/javascript" src="/js/jquery/jquery-migrate-1.2.1.js"></script>
+    .product:hover {
+      transform: translateY(-5px);
+    }
 
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
 
-  <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    .product h3 {
+      margin: 0.5rem 0 0.25rem;
+    }
 
+    .product p {
+      color: #666;
+      margin-bottom: 0.25rem;
+    }
 
+    .product span {
+      display: block;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 0.5rem;
+    }
 
+    .product button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #218838;
+    }
+
+    #carrinho {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      max-height: 400px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1000;
+    }
+
+    #carrinho h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    #carrinho ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    #carrinho ul li {
+      border-bottom: 1px solid #eee;
+      padding: 0.5rem 0;
+    }
+
+    #total {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    #carrinho button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #toggle-carrinho {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .banner {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
 </head>
 
-<body id="rbx-body" class="" data-performance-relative-value="0.005" data-internal-page-name="RollerCoaster" data-send-event-percentage="0.01">
-  <div id="roblox-linkify" data-enabled="true" data-regex="(https?\:\/\/)?(?:www\.)?([a-z0-9\-]{2,}\.)*(((m|de|www|web|api|blog|wiki|help|corp|polls|bloxcon|developer|devforum|forum)\.roblox\.com|robloxlabs\.com)|(www\.shoproblox\.com))((\/[A-Za-z0-9-+&amp;@#\/%?=~_|!:,.;]*)|(\b|\s))" data-regex-flags="gm" data-as-http-regex="((blog|wiki|[^.]help|corp|polls|bloxcon|developer|devforum)\.roblox\.com|robloxlabs\.com)"></div>
+<body>
+  <header>
+    <h1>Minha Loja Online</h1>
+  </header>
 
-  <div id="image-retry-data" data-image-retry-max-times="10" data-image-retry-timer="1500" data-isnewexponentialbackoffforimageretryenabled="true" data-ga-logging-percent="10">
+  <nav>
+    <a href="#inicio" data-section="inicio">Início</a>
+    <a href="#produtos" data-section="produtos">Produtos</a>
+    <a href="#categorias" data-section="categorias">Categorias</a>
+    <a href="#contato" data-section="contato">Contato</a>
+    <a href="#sobre" data-section="sobre">Sobre</a>
+  </nav>
+
+  <button id="toggle-carrinho">Carrinho (0)</button>
+  <div id="carrinho">
+    <h2>Seu Carrinho</h2>
+    <ul></ul>
+    <div id="total">Total: R$ 0,00</div>
+    <button onclick="finalizarCompra()">Finalizar Compra</button>
   </div>
-  <div id="http-retry-data" data-http-retry-max-timeout="0" data-http-retry-base-timeout="0" data-http-retry-max-times="5">
-  </div>
-  <div id="TosAgreementInfo" data-terms-check-needed="False">
-  </div>
 
-  <style type="text/css">
-    #RollerContainer {
-      background-image: url('https://images.rbxcdn.com/e942d5c326e104bddf1d2c8ce3e0e9a7.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+  <section class="banner" id="inicio">
+    Promoções Imperdíveis Hoje!
+  </section>
 
-    .app-store-container {
-    margin: 50px auto;
-    max-width: 970px;
-}
-  </style>
-
-  <div class="navbar navbar-landing navbar-fixed-top" role="navigation">
-    <div class="container">
-      <div class="row">
-        <div class="navbar-header col-md-6">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#LandingNavbar">
-            Log In
-          </button>
-          <div class="navbar-brand hidden-xs">
-            <img alt="Roblox Logo" class="robloxLogo" src="https://images.rbxcdn.com/13b5bfbebee2d722a1f0d2af181ac561.png">
-          </div>
-          <ul id="TopLeftNavLinks" class="nav navbar-nav">
-            <li id="PlayLink" class="pull-left"><a href="#RollerContainer" onclick="return scrollTo(1, '#RollerContainer');">Entre</a></li>
-            <li id="AboutLink" class="pull-left"><a href="#WhatsRobloxContainer" onclick="return scrollTo(2, '#WhatsRobloxContainer');">Sobre mim</a></li>
-            <li id="PlatformLink" class="pull-left"><a href="#RobloxDeviceText" onclick="return scrollTo(3, '#RobloxDeviceText');">Experiencias</a></li>
-            <li id="magic-line" style="left: 0px; width: 113px;"></li>
-          </ul>
-        </div>
-
-        <div class="collapse navbar-collapse col-sm-6 ng-scope" id="LandingNavbar" ng-modules="roblox.formEvents">
-          <form name="loginForm" action="https://www.roblox.com/newlogin" id="LogInForm" class="navbar-form form-inline navbar-right ng-pristine ng-valid" method="post" role="form" rbx-form-context="" context="RollerCoaster" novalidate="">
-            <div class="form-group" id="LoginUsernameParent">
-              <input id="LoginUsername" type="text" placeholder="Username" class="form-control" name="username" rbx-form-interaction="" autofocus="autofocus">
-            </div>
-            <div class="form-group" id="LoginPasswordParent">
-              <input id="LoginPassword" type="password" placeholder="Password" class="form-control" name="password" rbx-form-interaction="">
-            </div>
-            <div class="form-group">
-              <input type="submit" id="LoginButton" class="form-control" value="Log In" rbx-form-interaction="" name="submitLogin">
-            </div>
-            <a id="HeaderForgotPassword" class="navbar-link" href="https://www.roblox.com/login/forgotPasswordOrUsername/">É UM VICIO! NÃO LOG</a>
-            <input id="ReturnUrl" name="ReturnUrl" type="hidden" value="" autocomplete="off">
-          </form>
-        </div>
-      </div>
+  <main class="container" id="produtos">
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 1">
+      <h3>Produto 1</h3>
+      <p>Descrição do produto 1.</p>
+      <span>R$ 49,90</span>
+      <button>Comprar</button>
     </div>
-  </div>
 
-  <div class="container-fluid">
-    <!-- Roller Coaster-->
-    <section class="row full-height-section" id="RollerContainer">
-      <div class="col-md-12 inner-full-height-section" id="InnerRollerContainer">
-        <div id="MainCenterContainer" class="row">
-          <div class="col-xs-12 col-md-6">
-            <div id="MainLogo" class="text-right">
-              <div id="LogoAndSlogan" class="text-center">
-                <img id="MainLogoImage" title="ROBLOX" class="center-block img-responsive" src="https://images.rbxcdn.com/002d30eaf7df652d7711f8030066ed9a.svg.gzip">
-                <div class="clearfix"></div>
-              </div>
-            </div>
-          </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 2">
+      <h3>Produto 2</h3>
+      <p>Descrição do produto 2.</p>
+      <span>R$ 89,90</span>
+      <button>Comprar</button>
+    </div>
 
-          <!-- Modal -->
-          <div id="BootstrapConfirmationModal" data-modal-handle="bootstrap-confirmation" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" id="roblox-close-btn" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-                  <h4 class="modal-title">Modal title</h4>
-                </div>
-                <div class="modal-body">
-                  <div class="ImageContainer roblox-item-image" data-image-size="small" data-no-overlays="" data-no-click="">
-                    <img class="GenericModalImage" alt="generic image">
-                  </div>
-                  <p class="modal-body-text"></p>
-                  <p id="roblox-captcha-error" class="text-center text-danger"></p>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" id="roblox-decline-btn" class="btn btn-default" data-dismiss="modal">Close</button>
-                  <button type="button" id="roblox-confirm-btn" class="btn btn-primary">Save changes</button>
-                </div>
-              </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-          </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 3">
+      <h3>Produto 3</h3>
+      <p>Descrição do produto 3.</p>
+      <span>R$ 59,90</span>
+      <button>Comprar</button>
+    </div>
 
-          <script type="text/javascript">
-            Roblox = Roblox || {};
-            Roblox.Resources = Roblox.Resources || {};
-            //<sl:translate>
-            Roblox.Resources.GenericConfirmation = {
-              yes: "Yes",
-              No: "No",
-              Confirm: "Confirm",
-              Cancel: "Cancel"
-            };
-            //</sl:translate>
-          </script>
+    <div class="product">
+      <img src="https://via.placeholder.com/200" alt="Produto 4">
+      <h3>Produto 4</h3>
+      <p>Descrição do produto 4.</p>
+      <span>R$ 99,90</span>
+      <button>Comprar</button>
+    </div>
+  </main>
 
-          <div class="clearfix visible-sm"></div>
-          <div class="col-xs-12 col-md-6">
-            <div id="SignUpFormContainer" data-return-url="">
+  <section id="categorias">
+    <h2 style="text-align:center">Categorias</h2>
+    <p style="text-align:center">Aqui você encontra produtos por categorias (exemplo).</p>
+  </section>
 
-              <div data-parent-url="" data-is-from-studio="false" data-is-facebook-button-shown="false">
-                <div class="rbx-login-partial-legacy">
-                  <h3 class="text-center signup-header">FERNANDA ROBLOX</h3>
-                  <h6>Estudante de Desenvolvimento de Sistemas</h6>
-                  <br>
-                  <h5>Sou uma pessoa muito indecisa, e muito sonhadora. Bem paradoxal, né.</h5>
-                  <h5>O que me ajuda a ser muito criativa, porem, sem clareza no que quero... coisas da adolescencia, vai passar.</h5>
-                  <h5>Sou introspectiva, passo muito tempo em silencio e pensando.</h5>
-                  <h5>Porem, sou muito comunicativa quando me sinto confortável com o espaço e com as pessoas.</h5>
+  <section id="sobre">
+    <h2 style="text-align:center">Sobre Nós</h2>
+    <p style="max-width: 600px; margin: auto; text-align: center;">
+      Somos uma loja dedicada a oferecer os melhores produtos com o melhor atendimento. Trabalhamos com paixão para garantir a sua satisfação.
+    </p>
+  </section>
 
-                  <style type="text/css">
-                    .male {
-                      background-image: url('https://images.rbxcdn.com/856241927a2ac609e3033feada3ef9f9.png');
-                      background-repeat: no-repeat;
-                    }
-
-                    .female {
-                      background-image: url('https://images.rbxcdn.com/a0afd0556163477e1023c5aa55d1b9f6.png');
-                      background-repeat: no-repeat;
-                    }
-                  </style>
-
-                  <div class="signup-or-log-in new-username-pwd-rule ng-scope" ng-modules="robloxApp, Signup" ng-controller="SignupController" data-metadata-params="{&quot;isEligibleForHideAdsAbTest&quot;:&quot;False&quot;}">
-
-                    <div class="signup-container ng-scope" ng-controller="SignupController">
-
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!-- What is Roblox -->
-    <section class="row full-height-section" id="WhatsRobloxContainer">
-
-      <div class="col-md-12 inner-full-height-section">
-
-        <div class="row whats-roblox-container" id="InnerWhatsRobloxContainer1">
-          <div id="WhatIsRobloxTextBg" class="col-sm-5 col-sm-offset-6 col-xs-8 col-xs-offset-2">
-            <h1 class="text-center">QUEM SOU EU?</h1>
-            <p class="lead text-justify">
-              Oii, sou a Fernanda Guaita, jogo roblox todos os dias, tenho 17 anos, moro com meus pais e meu irmão menor, ele tem 9 anos, ele joga roblox, minhas conquistas são so no roblox! O roblox se tornou um vicio, quase todos os dias eu durmo as 4hrs e acordo as 6hrs para ir para escola.
-            </p>
-          </div>
-        </div>
-
-        <div class="row" id="InnerWhatsRobloxContainer2">
-          <div id="GameImage1" class="col-sm-4 col-xs-12 game-image game-image-1"></div>
-          <div id="GameImage2" class="hidden-xs col-sm-4 game-image game-image-2"></div>
-          <div id="GameImage3" class="col-sm-4 hidden-xs game-image game-image-3"></div>
-        </div>
-
-      </div>
-    </section>
-    <div class="clearfix"></div>
-
-    <!-- Roblox on your device -->
-    <section id="DeviceSection">
-      <div class="row" id="RobloxDeviceText">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <h2>TRABALHOS</h2>
-          <p class="lead center-block">
-            Meu primeiro emprego foi em uma odontologia, trabalhei durante 3 meses das 14hrs até 20hrs, logo depois comecei em outro que consegui pelo senai ele era assistente adm eu trabalhava na parte do RH, era das 13:30 até 17:30, trabalhei durante 10 meses, fiz varios cursos no CIEE para agregar no meu curriculo!
-          </p>
-        </div>
-      </div>
-
-
-
-      <div class="row" id="DeviceImageContainer my-5">
-        <div class="col-md-12">
-          <div class="row text-center">
-            <div class="hidden-lg devices-container-small">
-              <div class="devices-img devices-img-small">
-                <img id="ComputerImgSmall" class="center-block img-responsive ComputerImg src-replaced" data-delaysrc="https://images.rbxcdn.com/004c8042d0d59f40b4779c16636da58b.png" src="https://images.rbxcdn.com/004c8042d0d59f40b4779c16636da58b.png">
-              </div>
-            </div>
-            <div class="visible-lg-block devices-container-large">
-              <div class="devices-img devices-img-large">
-                <img class="center-block img-responsive ComputerImg src-replaced" data-delaysrc="https://images.rbxcdn.com/c289947cbd1e64dd74edf06d49521778.png" src="https://images.rbxcdn.com/c289947cbd1e64dd74edf06d49521778.png">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-      <ul id="AppStoreContainer" class="row text-center app-store-container row-five">
-        <li>
-          <a href="https://instagram.com/nandaa.gzz" target="_blank" class="app-store-link-apple">
-            <img class="app-store-logo src-replaced" title="ROBLOX on App Store" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg">
-          </a>
-        </li>
-        <li>
-          <a href="https://play.google.com/store/apps/details?id=com.roblox.client&amp;hl=en&amp;utm_source=global_co&amp;utm_medium=prtnr&amp;utm_content=Mar2515&amp;utm_campaign=PartBadge&amp;pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1" target="_blank" class="app-store-link-android">
-            <img class="app-store-logo android src-replaced" data-delaysrc="https://images.rbxcdn.com/c3f1d2562c735775d7fa2fc3ddb0dfdd.png" title="Get it on Google Play" alt="Get it on Google Play" src="https://images.rbxcdn.com/c3f1d2562c735775d7fa2fc3ddb0dfdd.png">
-          </a>
-        </li>
-        <li>
-          <a href="http://amzn.com/B00NUF4YOA" target="_blank" class="app-store-link-amazon">
-            <img class="app-store-logo src-replaced" data-delaysrc="https://images.rbxcdn.com/29d56f5d7a8c1d6d4a267b28134e221d.png" title="ROBLOX on Amazon Store" src="https://images.rbxcdn.com/29d56f5d7a8c1d6d4a267b28134e221d.png">
-          </a>
-        </li>
-        <li>
-          <a href="http://store.xbox.com/en-US/Xbox-One/Games/ROBLOX/c79323fd-00f8-462a-a97a-39a0eb61791e" target="_blank" class="app-store-link-xbox">
-            <img class="app-store-logo src-replaced" data-delaysrc="https://images.rbxcdn.com/cfbff08ccdfe3e51898dfecf5635dc2a.png" title="ROBLOX on Xbox Store" src="https://images.rbxcdn.com/cfbff08ccdfe3e51898dfecf5635dc2a.png">
-          </a>
-        </li>
-        <li>
-          <a href="https://www.microsoft.com/en-us/store/games/roblox/9nblgggzm6wm" target="_blank" class="app-store-link-windows10">
-            <img class="app-store-logo src-replaced" data-delaysrc="https://images.rbxcdn.com/6e6e44a25ac2fc28a678880c2fec24a9.png" title="ROBLOX on Windows Store" src="https://images.rbxcdn.com/6e6e44a25ac2fc28a678880c2fec24a9.png">
-          </a>
-
-        </li>
-      </ul>
-    </section>
-
-
-  </div>
-
-  <img src="/timg/rbx" style="position: absolute">
-
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "name": "Roblox",
-      "url": "https://www.roblox.com/",
-      "logo": "https://images.rbxcdn.com/1870e85fa867567576343eaf76fb841e.png",
-      "sameAs": [
-        "https://www.facebook.com/Fernanda/",
-        "https://twitter.com/fernanda",
-        "https://www.linkedin.com/in/fernanda",
-        "https://www.instagram.com/fernanda/",
-      ]
-    }
-  </script>
-
-  </div>
-  <div ng-modules="pageTemplateApp" class="ng-scope">
-    <!-- Template bundle: page -->
-    <script type="text/javascript">
-      "use strict";
-      angular.module("pageTemplateApp", []).run(['$templateCache', function($templateCache) {}]);
-    </script>
-
-  </div>
-
-  <script type="text/javascript" src="https://js.rbxcdn.com/52d6c53df691154ef47c11f9e256df21.js.gzip"></script>
+  <footer id="contato">
+    <p>&copy; 2025 Minha Loja Online. Todos os direitos reservados.</p>
+  </footer>
 
   <script>
-    var _comscore = _comscore || [];
-    _comscore.push({
-      c1: "2",
-      c2: "6035605",
-      c3: "",
-      c4: "",
-      c15: ""
+    document.addEventListener('DOMContentLoaded', () => {
+      const carrinho = [];
+      const carrinhoEl = document.getElementById('carrinho');
+      const carrinhoLista = carrinhoEl.querySelector('ul');
+      const totalEl = document.getElementById('total');
+      const toggleCarrinhoBtn = document.getElementById('toggle-carrinho');
+
+      function atualizarCarrinho() {
+        carrinhoLista.innerHTML = '';
+        let total = 0;
+        carrinho.forEach(({ nome, preco }) => {
+          const li = document.createElement('li');
+          li.textContent = `${nome} - R$ ${preco.toFixed(2).replace('.', ',')}`;
+          carrinhoLista.appendChild(li);
+          total += preco;
+        });
+        totalEl.textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+        toggleCarrinhoBtn.textContent = `Carrinho (${carrinho.length})`;
+      }
+
+      function adicionarAoCarrinho(nomeProduto, precoProduto) {
+        carrinho.push({ nome: nomeProduto, preco: precoProduto });
+        atualizarCarrinho();
+      }
+
+      document.querySelectorAll('.product button').forEach(button => {
+        button.addEventListener('click', (e) => {
+          const produto = e.target.parentElement;
+          const nome = produto.querySelector('h3').textContent;
+          const precoTexto = produto.querySelector('span').textContent.replace('R$ ', '').replace(',', '.');
+          const preco = parseFloat(precoTexto);
+          adicionarAoCarrinho(nome, preco);
+        });
+      });
+
+      toggleCarrinhoBtn.addEventListener('click', () => {
+        carrinhoEl.style.display = carrinhoEl.style.display === 'none' ? 'block' : 'none';
+      });
+
+      document.querySelectorAll('nav a').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const sectionId = link.getAttribute('data-section');
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
     });
-    (function() {
-      var s = document.createElement("script"),
-        el = document.getElementsByTagName("script")[0];
-      s.async = true;
-      s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
-      el.parentNode.insertBefore(s, el);
-    })();
-  </script><iframe src="https://tpc.googlesyndication.com/safeframe/1-0-8/html/container.html" style="visibility: hidden; display: none;"></iframe>
 
-
+    function finalizarCompra() {
+      alert('Compra finalizada com ' + document.querySelectorAll('#carrinho ul li').length + ' item(ns)!');
+    }
+  </script>
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja Online</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff0f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #ffb6c1;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      border-bottom: 5px dotted #fff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ff69b4;
+      padding: 0.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #ffb6c1;
+      padding: 0.4rem 1rem;
+      border-radius: 25px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #fff;
+      color: #ff69b4;
+    }
+
+    .banner {
+      background: url('https://via.placeholder.com/1200x300/ffc0cb/ffffff?text=Bem+Vinda+%E0+Loja+Fofa') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+      text-shadow: 1px 1px 4px #000;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+
+    .product {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(255, 182, 193, 0.5);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      margin: 0.5rem 0 0.25rem;
+    }
+
+    .product p {
+      color: #666;
+      margin-bottom: 0.25rem;
+    }
+
+    .product span {
+      display: block;
+      font-weight: bold;
+      color: #d6336c;
+      margin-bottom: 0.5rem;
+    }
+
+    .product button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-top: 0.5rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .product button:hover {
+      background-color: #ff1493;
+    }
+
+    #carrinho {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: white;
+      border: 2px dashed #ff69b4;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      width: 300px;
+      max-height: 400px;
+      overflow-y: auto;
+      display: none;
+      z-index: 1000;
+    }
+
+    #carrinho h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    #carrinho ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    #carrinho ul li {
+      border-bottom: 1px dotted #eee;
+      padding: 0.5rem 0;
+    }
+
+    #total {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    #carrinho button {
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+    }
+
+    #toggle-carrinho {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 25px;
+      cursor: pointer;
+      z-index: 1001;
+      font-weight: bold;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    section {
+      padding: 2rem 1rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #ffb6c1;
+      color: #fff;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .banner {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Loja Online</title>
+      <style>
+        /* ... Seus estilos anteriores ... */
+        #carrinho button {
+          background-color: #007bff;
+          color: white;
+          border: none;
+          padding: 0.5rem 1rem;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        #limpar-carrinho {
+          background-color: #dc3545;
+          margin-top: 1rem;
+        }
+      </style>
+    </head>
+    
+    <body>
+      <!-- ... O restante do conteúdo da página ... -->
+      
+      <div id="carrinho">
+        <h2>Seu Carrinho</h2>
+        <ul></ul>
+        <div id="total">Total: R$ 0,00</div>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <button id="limpar-carrinho" onclick="limparCarrinho()">Limpar Carrinho</button>
+      </div>
+    
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const carrinho = [];
+          const carrinhoEl = document.getElementById('carrinho');
+          const carrinhoLista = carrinhoEl.querySelector('ul');
+          const totalEl = document.getElementById('total');
+          const toggleCarrinhoBtn = document.getElementById('toggle-carrinho');
+    
+          function atualizarCarrinho() {
+            carrinhoLista.innerHTML = '';
+            let total = 0;
+            carrinho.forEach(({ nome, preco }) => {
+              const li = document.createElement('li');
+              li.textContent = `${nome} - R$ ${preco.toFixed(2).replace('.', ',')}`;
+              carrinhoLista.appendChild(li);
+              total += preco;
+            });
+            totalEl.textContent = `Total: R$ ${total.toFixed(2).replace('.', ',')}`;
+            toggleCarrinhoBtn.textContent = `Carrinho (${carrinho.length})`;
+          }
+    
+          function adicionarAoCarrinho(nomeProduto, precoProduto) {
+            carrinho.push({ nome: nomeProduto, preco: precoProduto });
+            atualizarCarrinho();
+          }
+    
+          function limparCarrinho() {
+            carrinho.length = 0;
+            atualizarCarrinho();
+          }
+    
+          document.querySelectorAll('.product button').forEach(button => {
+            button.addEventListener('click', (e) => {
+              const produto = e.target.parentElement;
+              const nome = produto.querySelector('h3').textContent;
+              const precoTexto = produto.querySelector('span').textContent.replace('R$ ', '').replace(',', '.');
+              const preco = parseFloat(precoTexto);
+              adicionarAoCarrinho(nome, preco);
+            });
+          });
+    
+          toggleCarrinhoBtn.addEventListener('click', () => {
+            carrinhoEl.style.display = carrinhoEl.style.display === 'none' ? 'block' : 'none';
+          });
+        });
+    
+        function finalizarCompra() {
+          alert('Compra finalizada com ' + document.querySelectorAll('#carrinho ul li').length + ' item(ns)!');
+        }
+      </script>
+    </body>
+    
+    </html>
+    
